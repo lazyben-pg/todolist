@@ -1,6 +1,7 @@
 {
   "name": "todolist",
   "version": "0.1.0",
+  "homepage": "https://lazzben.github.io/todolist/build",
   "private": true,
   "dependencies": {
     "react": "^16.8.6",
