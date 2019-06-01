@@ -1,33 +1,63 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+ul,li {
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html,body {
+  height: 100%
+}
+
+#todolist-container>.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 50px;
+  background: #346fef;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#todolist-container>.header>.logo {
+  margin-left: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#todolist-container>.header>.logout {
+  font-size: 20px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+#todolist-container>.main {
+  display: flex;
+  height: calc(100vh - 50px)
+}
+
+#todolist-container>.main>.aside {
+  font-size: 20px;
+  height: 100%;
+  width: 250px;
+  background: rgb(244,244,244);
+}
+
+#todolist-container>.main>.aside>div {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
+
+#todolist-container>.main>.aside>.user {
+  cursor: default;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+
+#todolist-container>.main>.todo {
+  height: 100%;
+  flex:1;
+  padding:10px;
 }
